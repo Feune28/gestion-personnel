@@ -1,0 +1,374 @@
+/* ===========================
+   BOUTON FLOTTANT
+=========================== */
+
+.assistant-floating-btn{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:65px;
+
+    height:65px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+
+    color:#fff;
+
+    z-index:9999;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+    transition:.3s;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+}
+
+.assistant-floating-btn:hover{
+
+    transform:translateY(-4px) scale(1.05);
+
+}
+
+.assistant-floating-btn i{
+
+    font-size:22px;
+
+}
+
+.assistant-floating-btn span{
+
+    font-size:11px;
+
+    margin-top:2px;
+
+}
+
+/* ===========================
+   OFFCANVAS
+=========================== */
+
+.assistant-offcanvas{
+
+    width:480px !important;
+
+}
+
+.assistant-header{
+
+    background:#2563eb;
+
+    color:#fff;
+
+}
+
+.assistant-title-wrap{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.assistant-logo{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    color:#2563eb;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:24px;
+
+}
+
+.assistant-header small{
+
+    color:#e5e7eb;
+
+}
+
+/* ===========================
+BODY
+=========================== */
+
+.assistant-body{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+    background:#f8fafc;
+
+}
+
+.assistant-welcome{
+
+    display:flex;
+
+    gap:15px;
+
+    background:#fff;
+
+    border-radius:15px;
+
+    padding:15px;
+
+}
+
+.assistant-welcome-icon{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:25px;
+
+}
+
+/* ===========================
+FORMULAIRE
+=========================== */
+
+.assistant-label{
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+}
+
+.assistant-input-group{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.assistant-input-group textarea{
+
+    flex:1;
+
+    resize:none;
+
+    border-radius:12px;
+
+    border:1px solid #d1d5db;
+
+    padding:12px;
+
+    outline:none;
+
+}
+
+.assistant-input-group textarea:focus{
+
+    border-color:#2563eb;
+
+}
+
+.assistant-input-group button{
+
+    width:55px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:20px;
+
+}
+
+/* ===========================
+SUGGESTIONS
+=========================== */
+
+.assistant-section-title{
+
+    font-weight:bold;
+
+    margin-bottom:12px;
+
+}
+
+.assistant-suggestion-list{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+.assistant-suggestion{
+
+    border:none;
+
+    border-radius:30px;
+
+    padding:8px 14px;
+
+    background:white;
+
+    border:1px solid #dbeafe;
+
+    transition:.2s;
+
+}
+
+.assistant-suggestion:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+/* ===========================
+REPONSE
+=========================== */
+
+.assistant-response{
+
+    background:white;
+
+    border-radius:15px;
+
+    min-height:250px;
+
+    padding:20px;
+
+    border:1px solid #e5e7eb;
+
+    overflow:auto;
+
+}
+
+.assistant-empty-response{
+
+    height:210px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#94a3b8;
+
+    text-align:center;
+
+}
+
+.assistant-empty-response i{
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+.assistant-response{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    max-height:420px;
+    overflow-y:auto;
+    scroll-behavior:smooth;
+}
+
+.assistant-message{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+
+.assistant-message-label{
+    font-size:11px;
+    font-weight:800;
+    color:#64748b;
+}
+
+.assistant-message-user{
+    align-items:flex-end;
+}
+
+.assistant-message-ai{
+    align-items:flex-start;
+}
+
+.assistant-message-bubble{
+    max-width:92%;
+    padding:12px 14px;
+    border-radius:16px;
+    line-height:1.5;
+    font-size:13px;
+}
+
+.assistant-message-user .assistant-message-bubble{
+    background:#2563eb;
+    color:#fff;
+    border-bottom-right-radius:5px;
+}
+
+.assistant-message-ai .assistant-message-bubble{
+    background:#f1f5f9;
+    color:#0f172a;
+    border:1px solid #e2e8f0;
+    border-bottom-left-radius:5px;
+}
+
+body.dark-mode .assistant-message-ai .assistant-message-bubble{
+    background:#111827;
+    color:#e5e7eb;
+    border-color:#334155;
+}

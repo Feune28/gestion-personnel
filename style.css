@@ -1,0 +1,50 @@
+body{
+
+    margin:0;
+    background:#f4f6f9;
+    font-family:Arial;
+
+}
+
+.sidebar{
+
+    width:250px;
+    min-height:100vh;
+    background:#0d1b2a;
+
+}
+
+.menu-link{
+
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    border-radius:8px;
+    margin-bottom:10px;
+
+    transition:0.3s;
+
+}
+
+.menu-link:hover{
+
+    background:#1b263b;
+
+}
+
+.topbar{
+
+    background:white;
+    padding:20px;
+
+}
+
+.dashboard-card{
+
+    border:none;
+    border-radius:15px;
+    padding:25px;
+    background:white;
+
+}

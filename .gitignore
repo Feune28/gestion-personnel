@@ -1,0 +1,33 @@
+# Dépendances
+/node_modules/
+/vendor/
+
+# Fichiers sensibles
+.env
+.env.*
+
+# Configurations contenant potentiellement des mots de passe
+connexion.php
+config_mail.php
+
+# Fichiers envoyés par les utilisateurs
+/uploads/*
+!/uploads/.gitkeep
+
+# Fichiers temporaires
+*.log
+*.tmp
+*.cache
+
+# Éditeurs
+.vscode/
+.idea/
+
+# Système
+.DS_Store
+Thumbs.db
+
+# Fichiers de sauvegarde
+*.bak
+# Configuration base de données Superadmin
+superadmin/config/database.php
